@@ -1,29 +1,65 @@
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset for consistent styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light grey background for the body */
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db; /* Blue background for the header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+    color: #fff; /* White text color for the heading */
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 16px;
-    color: #666;
+    font-size: 18px;
+    color: #555;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 a {
-    color: #007bff;
+    display: inline-block;
+    color: #3498db; /* Blue text color for links */
+    font-size: 18px;
     text-decoration: none;
+    background-color: #fff; /* White background for links */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #3498db; /* Border color matching the link color */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #3498db; /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333; /* Dark grey background for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
